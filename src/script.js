@@ -17,9 +17,10 @@ import { Integrations } from '@sentry/tracing'
 //   width: 400,
 // })
 // const debugObject = {}
-
+// THIS IS MINE: https://26af27f9f9e84d6e8213866b9d216334@o87286.ingest.sentry.io/6260924
+// https://9b006a9db9a54c2490c8f5cb02caee1a@o59216.ingest.sentry.io/5905944
 Sentry.init({
-  dsn: 'https://9b006a9db9a54c2490c8f5cb02caee1a@o59216.ingest.sentry.io/5905944',
+  dsn: 'https://26af27f9f9e84d6e8213866b9d216334@o87286.ingest.sentry.io/6260924',
   integrations: [new Integrations.BrowserTracing()],
 
   // Set tracesSampleRate to 1.0 to capture 100%
@@ -654,6 +655,7 @@ function endGame() {
   fartNoise.play()
   gameover = true
   characterBody.sleep()
+  myUndefinedFunction();
   setTimeout(function () {
     resetGame()
     startGame()
